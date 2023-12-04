@@ -615,11 +615,18 @@
 
         <div class="subscribe-box">
           <form class="subscribe-form" name="subscribe-form">
-            <label>
-              Subscribe
+            <label class="subscribe-lbl" for="email"> Subscribe </label>
+            <div class="input-cont">
               <input type="email" name="email" placeholder="E-mail" />
-            </label>
-            <button class="subscribe-btn" type="submit">Subscribe</button>
+              <button class="subscribe-btn" type="submit">
+                <div class="btn-cont">
+                  Subscribe
+                  <svg class="icon" height="24" width="24">
+                    <use href="./images/icons.svg#icon-icon-send"></use>
+                  </svg>
+                </div>
+              </button>
+            </div>
           </form>
         </div>
       </div>
