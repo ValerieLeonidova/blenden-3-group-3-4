@@ -68,7 +68,7 @@
 
         <div class="backdrop">
           <div class="modal">
-            <button class="close" type="button">
+            <button class="close-btn" type="button">
               <svg class="icon" height="24" width="24">
                 <use href="./images/icons.svg#icon-close"></use>
               </svg>
@@ -78,29 +78,43 @@
                 Leave your contacts and we will call you back
               </legend>
               <form class="modal-form" name="modal-form">
-                <label class="form-label">
-                  Name
-                  <input class="" type="text" name="name" />
-                </label>
-                <label class="form-label">
-                  Phone
-                  <input class="" type="tel" name="phone" />
-                </label>
-                <label class="form-label">
-                  Email
-                  <input class="" type="email" name="email" />
-                </label>
-                <label class="form-label">
-                  Comment
-                  <input class="" type="text" name="comment" />
-                </label>
+                <label class="form-label" for="name"> Name </label>
+                <input class="modal-input" type="text" name="name" id="name" />
+                <label class="form-label" for="phone"> Phone </label>
+                <input class="modal-input" type="tel" name="phone" id="phone" />
+                <label class="form-label" for="email"> Email </label>
+                <input
+                  class="modal-input"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
+                <label class="form-label" for="comment"> Comment </label>
+                <textarea
+                  class="modal-input"
+                  type="text"
+                  name="comment"
+                  rows="5"
+                  id="comment"
+                  placeholder="Text input"
+                >
+                </textarea>
                 <input type="checkbox" name="agreement" id="agreement" />
-                <label for="agreement">
+                <label class="form-label" for="agreement">
                   I accept the terms and conditions of the
                   <a href="">Privacy Policy</a>
                 </label>
                 <button class="send-btn" type="button">Send</button>
               </form>
+              <svg class="icon" height="18" width="18">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+              <svg class="icon" height="18" width="18">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+              <svg class="icon" height="18" width="18">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
             </fieldset>
           </div>
         </div>
