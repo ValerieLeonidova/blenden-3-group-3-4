@@ -603,38 +603,44 @@ margin-bottom: 16px;
 }
 
 .subscribe-form {
-    color: #FFF;
+    display: flex;
+    gap: 24px;
+}
+.subscribe-text {
+    margin-bottom: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: #FFF;
 }
-.subscribe-lbl {
-display: block;
-margin-bottom: 16px;
-}
-.footer input[type="email"] {
-    background-color: inherit;
+.subscribe-input {
+    background-color: transparent;
     border-radius: 4px;
     border: 1px solid #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     width: 264px;
     height: 40px;
-    padding: 8px 16px;
-    /* margin-right: 24px; */
+    padding-left: 16px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #FFF;
 }
 input::placeholder {
     color: #FFF;
-        font-size: 12px;
-        line-height: 2;
-        letter-spacing: 0.04em;
 }
 .subscribe-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 8px 24px;
-    width: 165px;
+    min-width: 165px;
+    height: 40px;
     border-radius: 4px;
     background-color: #4D5AE5;
     color: #FFF;
-    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -648,12 +654,7 @@ input::placeholder {
 .subscribe-btn:focus {
     background-color: #404BBF;
 }
-.input-cont {
-    display: flex;
-    gap: 24px;
-}
-.btn-cont {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+.subscribe-btn .icon {
+    margin-left: 16px;
 }
