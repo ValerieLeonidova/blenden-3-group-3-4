@@ -643,43 +643,74 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <fieldset class="modal-group">
-          <legend class="modal-title">
-            Leave your contacts and we will call you back
-          </legend>
-          <form class="modal-form" name="modal-form">
-            <label class="form-label" for="name"> Name </label>
-            <input class="modal-input" type="text" name="name" id="name" />
+
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+
+        <form class="modal-form" name="modal-form">
+          <div class="form-item">
+            <label class="form-label" for="user-name"> Name </label>
+            <div class="input-box">
+              <input
+                class="modal-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+              />
+              <svg class="icon" height="24" width="18">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-item">
             <label class="form-label" for="phone"> Phone </label>
-            <input class="modal-input" type="tel" name="phone" id="phone" />
-            <label class="form-label" for="email"> Email </label>
-            <input class="modal-input" type="email" name="email" id="email" />
-            <label class="form-label" for="comment"> Comment </label>
+            <div class="input-box">
+              <input
+                class="modal-input"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+              />
+              <svg class="icon" height="24" width="18">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-item">
+            <label class="form-label" for="user-email"> Email </label>
+            <div class="input-box">
+              <input
+                class="modal-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+              />
+              <svg class="icon" height="24" width="18">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-item-textarea">
+            <label class="form-label" for="user-comment"> Comment </label>
+
             <textarea
-              class="modal-input"
+              class="comment-area"
               rows="5"
-              name="comment"
-              id="comment"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
             >
             </textarea>
+          </div>
+          <div>
             <input type="checkbox" name="agreement" id="agreement" />
             <label class="form-label" for="agreement">
               I accept the terms and conditions of the
               <a href="">Privacy Policy</a>
             </label>
-            <button class="send-btn" type="submit">Send</button>
-          </form>
-          <svg class="icon" height="18" width="18">
-            <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
-          </svg>
-          <svg class="icon" height="18" width="18">
-            <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
-          </svg>
-          <svg class="icon" height="18" width="18">
-            <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-          </svg>
-        </fieldset>
+          </div>
+
+          <button class="send-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
   </body>
