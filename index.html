@@ -657,12 +657,12 @@
                 id="user-name"
               />
               <svg class="icon" height="24" width="18">
-                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </div>
           <div class="form-item">
-            <label class="form-label" for="phone"> Phone </label>
+            <label class="form-label" for="user-phone"> Phone </label>
             <div class="input-box">
               <input
                 class="modal-input"
@@ -671,7 +671,7 @@
                 id="user-phone"
               />
               <svg class="icon" height="24" width="18">
-                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
@@ -685,7 +685,7 @@
                 id="user-email"
               />
               <svg class="icon" height="24" width="18">
-                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
@@ -701,11 +701,22 @@
             >
             </textarea>
           </div>
-          <div>
-            <input type="checkbox" name="agreement" id="agreement" />
-            <label class="form-label" for="agreement">
+          <div class="privacy-checkbox">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+            <label class="form-label" for="user-privacy">
+              <span class="checkbox-icon">
+                <svg class="icon" height="8" width="10">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the
-              <a href="">Privacy Policy</a>
+              <a href="privacy-link">Privacy Policy</a>
             </label>
           </div>
 
