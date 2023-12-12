@@ -687,8 +687,7 @@ visibility: visible;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comment-area::placeholder {
-    /* color: rgba(46, 47, 66, 0.40); */
-    color: red;
+    color: rgba(46, 47, 66, 0.40);
 }
 .comment-area:focus {
     border-color: #4D5AE5;
